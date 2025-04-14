@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Germania One";
+}
+
+:root {
+    --primary-color: rgb(221, 119, 7);
+    --secondary-color: rgb(45, 80, 160);
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+
+#header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1.5px 1.5px 5px 2px rgba(0, 0, 0, 0.372);
+    height: 12%;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header div {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.486);
+    letter-spacing: 0.07rem;
+}
+
+#header div img {
+    width: 80%;
+    height: auto;
+}
+
+#header nav {
+    width: 75%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button {
+    border: 1px solid black;
+    font-size: 1.3rem;
+    width: 30%;
+    border-radius: 40px;
+    letter-spacing: .1rem;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.486);
+}
+
+.button-active {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.562), 1%, white);
+    border: 1px solid black;
+    color: var(--secondary-color);
+}
+
+.button-inactive {
+    background: linear-gradient(to bottom right, white, 3%, rgba(45, 79, 160, 0.896));
+    color: white;
+}
+
+#content {
+    background-size: cover;
+    position: relative;
+    top: 112px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOMEPAGE */
+
+.homepage-container {
+    letter-spacing: .17rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-background {
+    background: url("./garten2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -20;
+}
+
+.welcome-message-container {
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin-top: 132px;
+    gap: 30px;
+    left: 70px;
+    background-color: rgba(0, 0, 0, 0.624);
+    color: white;
+    width: 60%;
+    height: 40%;
+}
+
+.welcome-message-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-message-container h2 {
+    font-size: 3rem;
+}
+
+.welcome-message-container p {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .03rem;
+    line-height: 1.7rem;
+}
+
+/* END HOMEPAGE */
+
+/**************************/
+
+/* MENU */
+
+.menu-background {
+    background: url("./menu-background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -20;
+}
+
+.menu-container {
+    letter-spacing: .08rem;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu-container div:nth-child(2) {
+    margin-top: 30px;
+}
+
+.menu-container div:last-child {
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-top: 40px;
+    margin-bottom: -10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 130%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 1.5px 1.5px 5px 2px rgb(0, 0, 0); */
+}
+
+.category h3 {
+    font-size: 2.5rem;
+}
+
+.speise {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.874);
+    text-align: center;
+}
+
+.speise img {
+    width: 100%;
+    height: auto;
+}
+
+/* END MENU */
+
+/**************************/
+
+/* ABOUT PAGE */
+
+.about-container {
+    letter-spacing: .17rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-background {
+    background: url("./garten.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -20;
+}
+
+.info-container {
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 80vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.info-container div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    border-bottom: 4px solid black;
+}
+
+.hours, .location, .phone, .email {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.7rem;   
+    /* color: var(--primary-color); */
+ 
+}
+
+.hours span, .location span, .phone span, .email span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-shadow: 0.7px 0.7px 1px rgba(0, 0, 0, 0.587);
+}
+
