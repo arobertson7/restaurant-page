@@ -47,7 +47,7 @@ html, body {
 }
 
 #header nav {
-    width: 65%;
+    width: 70%;
     height: 40%;
     display: flex;
     justify-content: space-around;
@@ -111,7 +111,7 @@ nav button {
     justify-content: start;
     align-items: center;
     position: relative;
-    margin-top: 120px;
+    margin-top: 110px;
     gap: 30px;
     left: 65px;
     background-color: rgba(0, 0, 0, 0.624);
