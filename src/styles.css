@@ -23,30 +23,31 @@ html, body {
     justify-content: space-between;
     background-color: white;
     box-shadow: 1.5px 1.5px 5px 2px rgba(0, 0, 0, 0.372);
-    height: 12%;
+    height: 100px;
     width: 100%;
     z-index: 1000;
 }
 
 #header div {
-    width: 25%;
-    height: auto;
+    padding: 5px;
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.486);
     letter-spacing: 0.07rem;
 }
 
 #header div img {
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 80%;
 }
 
 #header nav {
-    width: 75%;
+    width: 65%;
     height: 40%;
     display: flex;
     justify-content: space-around;
@@ -73,9 +74,8 @@ nav button {
 }
 
 #content {
-    background-size: cover;
     position: relative;
-    top: 112px;
+    top: 100px;
     height: auto;
     width: 100%;
     display: flex;
@@ -86,7 +86,7 @@ nav button {
 /* HOMEPAGE */
 
 .homepage-container {
-    letter-spacing: .17rem;
+    letter-spacing: .15rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -127,14 +127,14 @@ nav button {
 }
 
 .welcome-message-container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .welcome-message-container p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: .03rem;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 
 /* END HOMEPAGE */
@@ -154,7 +154,7 @@ nav button {
 
 .menu-container {
     letter-spacing: .08rem;
-    width: 70%;
+    width: 55%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ nav button {
     background-color: white;
     border-radius: 20px;
     width: 130%;
-    height: 70px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +185,7 @@ nav button {
 }
 
 .category h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .speise {
@@ -196,7 +196,7 @@ nav button {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    font-size: 2rem;
+    font-size: 1.4rem;
     background-color: rgba(255, 255, 255, 0.874);
     text-align: center;
 }
@@ -213,7 +213,7 @@ nav button {
 /* ABOUT PAGE */
 
 .about-container {
-    letter-spacing: .17rem;
+    letter-spacing: .15rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -234,34 +234,31 @@ nav button {
     padding: 10px;
     margin-top: 50px;
     border-radius: 20px;
-    width: 80vw;
-    height: 50vh;
+    width: 80%;
+    height: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 30px;
 }
 
 .info-container div:first-child {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-bottom: 4px solid black;
 }
 
 .hours, .location, .phone, .email {
-    background-color: white;
     padding: 5px;
     border-radius: 10px;
-    font-size: 1.7rem;   
-    /* color: var(--primary-color); */
- 
+    font-size: 1.3rem;    
 }
 
 .hours span, .location span, .phone span, .email span {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--secondary-color);
     text-shadow: 0.7px 0.7px 1px rgba(0, 0, 0, 0.587);
